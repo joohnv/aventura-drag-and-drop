@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Drag&Drop</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../styles/preguntas.css">
+    <script src="../js/preguntas.js" defer></script>
+</head>
+<body class="bg-black text-white min-h-screen flex items-center justify-center">
+
+    <div>
+        <div class="bg-red-400 text-black w-full h-auto flex flex-col items-center justify-center p-6 rounded-lg shadow-lg mb-6 question" id="question1">
+            <h2 class="text-3xl text-center mb-4">¿Cuál es la capital de Francia?</h2>
+            <span class="bg-white text-black p-2 border-2 border-white rounded-md mb-6 drop-area w-64 h-8" id="drop1"></span>
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag1" draggable="true">Madrid</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag2" draggable="true">Roma</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag3" draggable="true">París</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag4" draggable="true">Berlín</div>
+            </div>
+        </div>
+
+        <div class="bg-red-400 text-black w-full h-auto flex flex-col items-center justify-center p-6 rounded-lg shadow-lg mb-6 hidden question" id="question2">
+            <h2 class="text-3xl text-center mb-4">¿Quién escribió "Cien años de soledad"?</h2>
+            <span class="bg-white text-black p-2 border-2 border-white rounded-md mb-6 drop-area w-64 h-8" id="drop2"></span>
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag5" draggable="true">Gabriel García Márquez</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag6" draggable="true">Pablo Neruda</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag7" draggable="true">Mario Vargas Llosa</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag8" draggable="true">Julio Cortázar</div>
+            </div>
+        </div>
+
+        <div class="bg-red-400 text-black w-full h-auto flex flex-col items-center justify-center p-6 rounded-lg shadow-lg mb-6 hidden question" id="question3">
+            <h2 class="text-3xl text-center mb-4">¿Qué continente está en el hemisferio sur?</h2>
+            <span class="bg-white text-black p-2 border-2 border-white rounded-md mb-6 drop-area w-64 h-8" id="drop3"></span>
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag9" draggable="true">Asia</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag10" draggable="true">Europa</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag11" draggable="true">Sudamérica</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag12" draggable="true">Oceania</div>
+            </div>
+        </div>
+
+        <div class="bg-red-400 text-black w-full h-auto flex flex-col items-center justify-center p-6 rounded-lg shadow-lg mb-6 hidden question" id="question4">
+            <h2 class="text-3xl text-center mb-4">¿Cuál es el elemento químico con el símbolo 'O'?</h2>
+            <span class="bg-white text-black p-2 border-2 border-white rounded-md mb-6 drop-area w-64 h-8" id="drop4"></span>
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag13" draggable="true">Oxígeno</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag14" draggable="true">Oro</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag15" draggable="true">Osmio</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag16" draggable="true">Ozono</div>
+            </div>
+        </div>
+
+        <div class="bg-red-400 text-black w-full h-auto flex flex-col items-center justify-center p-6 rounded-lg shadow-lg mb-6 hidden question" id="question5">
+            <h2 class="text-3xl text-center mb-4">¿En qué año se descubrió América?</h2>
+            <span class="bg-white text-black p-2 border-2 border-white rounded-md mb-6 drop-area w-64 h-8" id="drop5"></span>
+            <div class="grid grid-cols-2 gap-4 text-center">
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag17" draggable="true">1492</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag18" draggable="true">1500</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag19" draggable="true">1600</div>
+                <div class="cursor-pointer bg-gray-200 p-3 rounded drag-item" id="drag20" draggable="true">1700</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@keyframes mover-furgoneta {
+    0% {
+        transform: translateX(-900%);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+  }
+  
+  @keyframes mover-jugador {
+    0% {
+        transform: translateX(30%);
+    }
+    100% {
+        transform: translateX(-80%); 
+    }
+  }
+  
+  
+  @keyframes mover-furgoneta-final{
+    0%{
+      transform: translateX(10%);
+    }
+    100%{
+      transform: translateX(900%);
+    }
+  }
+  
+  .animate-mover-furgoneta {
+    animation: mover-furgoneta 6s ease-out forwards;
+  }
+  
+  .animate-mover-jugador {
+    animation: mover-jugador 2s ease-out forwards;
+  }
+  
+  .animate-mover-furgoneta-final {
+    animation: mover-furgoneta-final 5s ease-out forwards;
+  }
+  
+  .furgoneta, .jugador {
+    position: absolute;
+    top: 50%;
+    transition: transform 6s ease-out;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  img {
+    width: auto;
+    height: 50px;
+
+  }

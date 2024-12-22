@@ -1,0 +1,66 @@
+@keyframes mover-furgoneta {
+  0% {
+      transform: translateX(-900%);
+  }
+  100% {
+      transform: translateX(-60%);
+  }
+}
+
+@keyframes mover-ladron {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0); 
+  }
+}
+
+@keyframes mover-ladron-y-jugador{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-170%);
+  }
+}
+
+@keyframes mover-furgoneta-final{
+  0%{
+    transform: translateX(-60%);
+  }
+  100%{
+    transform: translateX(900%);
+  }
+}
+
+.animate-mover-furgoneta {
+  animation: mover-furgoneta 6s ease-out forwards;
+}
+
+.animate-mover-ladron {
+  animation: mover-ladron 1s ease-out forwards;
+}
+
+.animate-mover-ladron-y-jugador {
+  animation: mover-ladron-y-jugador 2s ease-out forwards;
+}
+
+.animate-mover-furgoneta-final {
+  animation: mover-furgoneta-final 5s ease-out forwards;
+}
+
+.furgoneta, .ladron, .jugador {
+  position: absolute;
+  top: 50%;
+  transition: transform 6s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  width: auto;
+  height: 50px;
+}

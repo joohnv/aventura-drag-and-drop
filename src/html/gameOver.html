@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Drag&Drop</title>
+    <link rel="stylesheet" href="../output.css">
+    <script src="../js/gameOver.js" defer></script>
+</head>
+<body class="bg-black h-screen flex flex-col justify-center items-center">
+
+    <!-- Título centrado -->
+    <div class="text-center mb-6">
+        <h1 class="text-4xl font-extrabold text-gray-900 dark:text-red-500">HAS PERDIDO!</h1>  
+    </div> 
+
+    <!-- Contenedor de las imágenes centrado -->
+    <div class="relative flex justify-center">
+        <img id="ladron" src="../img/ladron.png" alt="ladron" class="relative right-[80px] w-auto h-[50px]">
+        <img id="jugador" src="../img/jugador.png" alt="jugador" class="rotate-90 absolute top-[15px] left-[80px] w-auto h-[50px]">
+    </div>
+</body>
+</html>
